@@ -6,7 +6,7 @@ $query = "SELECT * FROM posts ORDER BY created_at DESC";
 $result = mysqli_query($conn, $query);
 ?>
 
-<h1>Blog</h1>
+<h1>Postagens Recentes</h1>
 <?php while($post = mysqli_fetch_assoc($result)): ?>
   <div class="post">
     <h2><a href="post.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
